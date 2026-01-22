@@ -13,7 +13,12 @@ public:
 
 private:
 	// Default functions for rendering to the screen.
-
+	sf::CircleShape m_Player;
+	sf::CircleShape m_food;
 	// Default variables for level class.
+	static enum direction{ UP, DOWN, LEFT, RIGHT };
+	direction lastDirection;
+	
+
 	
 };
