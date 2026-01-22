@@ -78,7 +78,7 @@ void Level::update(float dt)
 	auto fpos = m_food.getPosition();
 	float hypotanus = sqrt((fpos.x - pos.x) * (fpos.x - pos.x) + (fpos.y - pos.y ) * (fpos.y - pos.y ));
 	std::cout << hypotanus << std::endl;
-	if(hypotanus < 5 && hypotanus > -5)
+	if(hypotanus < 6 && hypotanus > -6)
 	{
 		
 		m_food.setPosition({float(rand() % 800),float(rand() % 600)});
